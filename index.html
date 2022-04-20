@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phonebill</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="library/feather.css">
+</head>
+<body>
+    <section class="app" id="app">
+        <div class="none text-box" id="text-box">
+                                     <!-- feather-delete -->
+            <p id="screen"></p> <i class="none" id="lastDel"></i>
+            <!-- <i class="feather-delete df" ></i> -->
+        </div>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <div onclick="showScreen('1')"><p>1</p></div>
+                    </td>
+                    <td>
+                        <div onclick="showScreen('2')"><p>2</p></div>
+                    </td>
+                    <td>
+                        <div onclick="showScreen('3')"><p>3</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div onclick="showScreen('4')"><p>4</p></div>
+                    </td>
+                    <td>
+                        <div onclick="showScreen('5')"><p>5</p></div>
+                    </td>
+                    <td>
+                        <div onclick="showScreen('6')"><p>6</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div onclick="showScreen('7')"><p>7</p></div>
+                    </td>
+                    <td>
+                        <div onclick="showScreen('8')"><p>8</p></div>
+                    </td>
+                    <td>
+                        <div onclick="showScreen('9')"><p>9</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div onclick="showScreen('*')"><p>*</p></div>
+                    </td>
+                    <td>
+                        <div onclick="showScreen('0')"><p>0</p></div>
+                    </td>
+                    <td>
+                        <div onclick="showScreen('#')"><p>#</p></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="sim-box">
+
+            <div class="setting">
+                <i class="feather-menu control"></i>
+            </div>
+           <div id="phone">
+              <section class="phone">
+                <i class="feather-phone"></i>
+              </section>
+           </div>
+           <div class="key" onclick="minimize()">
+                <i class="feather-minimize-2 control" id="mini"></i>
+           </div>
+
+        </div>
+    </section>
+    <section class="none" id="zoom" onclick="show()">
+        <i class="feather-minimize" id="iZoom"></i>
+    </section>
+
+    <script src="calculate.js"></script>
+</body>
+</html>
